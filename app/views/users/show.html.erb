@@ -1,0 +1,29 @@
+<%= render :partial => "layouts/menu" %>
+
+<div id="admin_show">
+<h1>Visning af bruger data
+<%= link_to '[Ret]', edit_user_path(@user) %>
+<%= link_to '[Liste]', users_path %>	
+</h1>
+<p>
+  <b>Login</b><br />
+  <%= @user.login %>
+</p>
+
+<p>
+  <b>e-mail</b><br />
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Password</b><br />
+  [secret]
+</p>
+
+<p>
+  <b>Blog navn</b><br />
+  <%= @user.blogname %>
+</p>
+
+
+</div>

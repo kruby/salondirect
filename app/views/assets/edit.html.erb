@@ -1,0 +1,44 @@
+<%= render :partial => "layouts/menu" %>
+<div id="admin_formular">	
+<h1>Ny upload</h1>
+<%= form_for @asset, :html => { :multipart => true } do |f| %>
+<% @image =  @asset.photo.url(:medium) %> 
+  <% if @asset.errors.any? %>
+    <div id="error_explanation">
+	<h2><%= @asset.errors.count %>Følgende fejl skal rettes</h2>
+
+      <ul>
+      <% @asset.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+
+	<p>
+    <b>Upload</b><br />
+    <%= f.file_field :photo %>
+  </p>
+
+  <p>
+	<b>Aktuelt foto</b> -> <%= @asset.photo_file_name %><br />
+	<b>Adresse</b> -> <%= @asset.photo.url(:original) %><br />
+	<%= image_tag(@image, :class => 'edit_photo') %>
+	
+  </p>
+
+    <%= f.submit "[Opdater]", :class => 'button' %>
+  </p>
+
+
+<% end %>
+
+<%#= link_to '[Tilbage]', assets_path %>
+
+
+</div>

@@ -1,0 +1,41 @@
+# Logfile created on Tue Oct 09 20:13:17 +0200 2012 by logger.rb/1.2.6
+[10/09/12 20:13:17 +0200 Thomass-iMac.local (37488)] INFO : Dispatcher: webrick
+[10/09/12 20:13:17 +0200 Thomass-iMac.local (37488)] INFO : Application: kruby.dk
+[10/09/12 20:13:17 +0200 Thomass-iMac.local (37488)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/09/12 20:13:17 +0200 Thomass-iMac.local (37488)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 37488
+[10/09/12 20:13:17 +0200 Thomass-iMac.local (37488)] INFO : Agent Log at /Users/thomas/sites/kruby/log/newrelic_agent.log
+[10/09/12 20:14:58 +0200 Thomass-iMac.local (37492)] INFO : Dispatcher: webrick
+[10/09/12 20:14:58 +0200 Thomass-iMac.local (37492)] INFO : Application: kruby.dk
+[10/09/12 20:14:58 +0200 Thomass-iMac.local (37492)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/09/12 20:14:58 +0200 Thomass-iMac.local (37492)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 37492
+[10/09/12 20:14:58 +0200 Thomass-iMac.local (37492)] INFO : Agent Log at /Users/thomas/sites/kruby/log/newrelic_agent.log
+[10/09/12 20:19:36 +0200 Thomass-iMac.local (37510)] INFO : Dispatcher: webrick
+[10/09/12 20:19:36 +0200 Thomass-iMac.local (37510)] INFO : Application: kruby.dk
+[10/09/12 20:19:36 +0200 Thomass-iMac.local (37510)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/09/12 20:19:36 +0200 Thomass-iMac.local (37510)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 37510
+[10/09/12 20:19:36 +0200 Thomass-iMac.local (37510)] INFO : Agent Log at /Users/thomas/sites/kruby/log/newrelic_agent.log
+[10/11/12 14:00:30 +0200 Thomass-iMac.local (925)] INFO : Dispatcher: webrick
+[10/11/12 14:00:30 +0200 Thomass-iMac.local (925)] INFO : Application: kruby.dk
+[10/11/12 14:00:30 +0200 Thomass-iMac.local (925)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/11/12 14:00:30 +0200 Thomass-iMac.local (925)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 925
+[10/11/12 14:00:30 +0200 Thomass-iMac.local (925)] INFO : Agent Log at /Users/thomas/sites/kruby/log/newrelic_agent.log
+[10/11/12 14:57:02 +0200 Thomass-iMac.local (1304)] INFO : Dispatcher: webrick
+[10/11/12 14:57:02 +0200 Thomass-iMac.local (1304)] INFO : Application: kruby.dk
+[10/11/12 14:57:02 +0200 Thomass-iMac.local (1304)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/11/12 14:57:02 +0200 Thomass-iMac.local (1304)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 1304
+[10/11/12 14:57:02 +0200 Thomass-iMac.local (1304)] INFO : Agent Log at /Users/thomas/sites/kruby/log/newrelic_agent.log
+[10/13/12 10:16:57 +0200 Thomass-iMac.local (1043)] INFO : Dispatcher: webrick
+[10/13/12 10:16:57 +0200 Thomass-iMac.local (1043)] INFO : Application: kruby.dk
+[10/13/12 10:16:57 +0200 Thomass-iMac.local (1043)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/13/12 10:16:57 +0200 Thomass-iMac.local (1043)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 1043
+[10/13/12 10:16:57 +0200 Thomass-iMac.local (1043)] INFO : Agent Log at /Users/thomas/Sites/kruby/log/newrelic_agent.log
+[10/13/12 10:22:24 +0200 Thomass-iMac.local (1059)] INFO : Dispatcher: webrick
+[10/13/12 10:22:24 +0200 Thomass-iMac.local (1059)] INFO : Application: kruby.dk
+[10/13/12 10:22:24 +0200 Thomass-iMac.local (1059)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/13/12 10:22:24 +0200 Thomass-iMac.local (1059)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 1059
+[10/13/12 10:22:24 +0200 Thomass-iMac.local (1059)] INFO : Agent Log at /Users/thomas/Sites/kruby/log/newrelic_agent.log
+[10/13/12 11:02:57 +0200 Thomass-iMac.local (1139)] INFO : Dispatcher: webrick
+[10/13/12 11:02:57 +0200 Thomass-iMac.local (1139)] INFO : Application: kruby.dk
+[10/13/12 11:02:57 +0200 Thomass-iMac.local (1139)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/13/12 11:02:57 +0200 Thomass-iMac.local (1139)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 1139
+[10/13/12 11:02:57 +0200 Thomass-iMac.local (1139)] INFO : Agent Log at /Users/thomas/Sites/kruby/log/newrelic_agent.log

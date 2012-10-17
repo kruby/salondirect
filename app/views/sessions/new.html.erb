@@ -1,0 +1,32 @@
+<%= render :partial => "layouts/menu" %>
+<div id="admin_formular">
+	
+	<div id="user_nav">
+	  <% if current_user %>
+	    Du er allerede logget ind som <%= current_user.email %>. <%= link_to "[Forside]", root_url %>
+	    <%#= link_to "Log out", log_out_path %>
+	  <% else %>
+	    <%#= link_to "Sign up", sign_up_path %>
+	    <%#= link_to "log in", log_in_path %>
+	  <% end %>
+	</div>
+
+	<%# flash.each do |name, msg| %>
+	  <%#= content_tag :div, msg, :id => "flash_#{name}" %>
+	<%# end %>
+
+<h1>Log ind</h1><%#= session[:current_controller] || params[:controller]%>
+
+<%= form_tag sessions_path do %>
+  <p>
+    <%= label_tag :email %><br />
+    <%= text_field_tag :email, params[:email] %>
+  </p>
+  <p>
+    <%= label_tag :password %><br />
+    <%= password_field_tag :password %>
+  </p>
+  <p><%= submit_tag "[Log ind]", :class => 'button'%></p>
+<% end %>
+
+</div>

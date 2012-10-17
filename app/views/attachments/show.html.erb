@@ -1,0 +1,33 @@
+<p>
+  <b>Attable type:</b>
+  <%= @attachment.attachable_type %>
+</p>
+
+<p>
+  <b>Attachable:</b>
+  <%= @attachment.attachable_id %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @attachment.description %>
+</p>
+
+<p>
+  <b>Image size:</b>
+  <%= @attachment.image_size %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= @attachment.priority %>
+</p>
+
+<p>
+  <b>Asset:</b>
+  <%= @attachment.asset_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_attachment_path(@attachment) %> |
+<%= link_to '[Tilbage]', attachments_path %>

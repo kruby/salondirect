@@ -1,0 +1,77 @@
+<div id='wrapper_background'>
+	<div id='wrapper_main'>
+		
+		<%= render :partial => "layouts/partials/top_foto" %>
+
+		<div id="forside_blog_wrapper">
+			<div id="tilbage"><%= link_to '[Tilbage]', root_url, :class => 'links' %></div>
+			
+
+			<div id="forside_blog_border">
+				<div class="forside_blog_wrapper">
+					<div class="blogpost">
+
+						<div class="topline">
+							<span class="title"><%#= post.id %><%= @post.title %><%#= truncate(post.title, :length => 35) %></span><br>
+
+
+							<% for attachment in @post.attachments %>
+							<% @alt = Asset.find(attachment.asset_id).description rescue nil %>
+							<%# @alt = Asset.find(attachment.asset_id).description + ' (' + attachment.asset_id.to_s + ')' rescue nil %>
+							<% @image = Asset.find(attachment.asset_id).photo.url(:thumb) %>
+							<% @image_show = Asset.find(attachment.asset_id).photo.url(:original)%> 
+
+							<span class='thumb' id='images'><%= link_to image_tag(@image, :alt => @alt), @image_show, {:class => "fancybox-button", :rel => "fancybox-button", :title => Asset.find(attachment.asset_id).description} %></span>
+							<!-- HER HAR VI BRUGT POST.ID TIL AT GØRE GRUPPEN AF FOTOS UNIK, SOM DET OGSÅ SES NEDERST I JAVASCRIPT I GROUP -->
+
+							<% end %>
+
+							<% if @post.attachments.count > 0 %>
+							<span class="foto"></span>
+							<% end %>
+						</div>
+						<div class="date_time">
+							Oprettet: <%= @post.created_at.strftime("%d.%m.%y - %H:%M") %> af 
+							<span class="author"><%= User.find(@post.user_id).blogname rescue nil %></span>
+							<% if @post.updated_at > @post.created_at + 10.days %>
+							- Opdateret: <%= @post.updated_at.strftime("%d.%m.%y - %H:%M") %>
+							<% end %>
+						</div>
+						<div class="body">
+							<p><%= textilize(@post.body).html_safe %></p>
+						</div>
+					</div><br>
+				</div>
+
+			</div>
+		</div>
+
+		<% content_for :javascript do %>
+
+			<script>
+		        $(document).ready(function() {
+					$(".fancybox-button").fancybox({
+						prevEffect		: 'none',
+						nextEffect		: 'none',
+						closeBtn		: false,
+						helpers		: {
+							title	: { type : 'inside' },
+							buttons	: {}
+						}
+					});
+				});
+		    </script>
+	
+		<% end %>
+	
+
+	</div>
+
+	<div id="bund_baggrund"><%= image_tag "baggrundsbund.jpg" %></div>
+
+</div>
+
+
+
+
+
