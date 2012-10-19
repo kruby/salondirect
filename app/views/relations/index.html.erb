@@ -2,7 +2,7 @@
 
 <div id="admin_liste">
 <%= form_tag relations_path, :method => 'get' do %>
-<h1>Relationer i Kruby <%= link_to '[Ny relation]', new_relation_path %></h1>
+<h1>Relationer i Salon Direct <%= link_to '[Ny relation]', new_relation_path %></h1>
 <p>
 	<%= text_field_tag :search, params[:search] %>
 	<%= submit_tag "[Søg]", :name => nil, :class => 'button'%>

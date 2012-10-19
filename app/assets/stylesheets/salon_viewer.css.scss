@@ -11,7 +11,7 @@ body {
 	margin-right: auto; 
 	margin-left: auto;
 	text-align: center; 
-	background-color:#5aa1cf;
+	background-color:#EF3C44;
 	border:none;
 /*	background-image: url(../images/baggrund.jpg);*/
 	background-repeat: repeat-y;
@@ -24,7 +24,7 @@ h1 {
 	font-weight: bold;
 	text-align:left;
 	line-height: 22px;
-	color:#165792;
+	color:#800000;
 	margin-top: 10px;
 	margin-bottom: 5px;
 }
@@ -34,7 +34,7 @@ p {
 	font-weight: normal;
 	text-align:left;
 	line-height: 15px;
-	color:#165792;
+	color:#800000;
 	margin-top: 0px;
 	margin-left: 2px;
 }
@@ -50,7 +50,7 @@ table {
 }
 
 #forside_wrapper {
-/*	border-bottom: 2px solid #00AAD8;*/
+/*	border-bottom: 2px solid #EF3C44;*/
 	padding-bottom: 5px;
 	width: 570px;
 	margin-right: auto; 
@@ -126,7 +126,7 @@ table {
 	margin-bottom: 20px; 
 	margin-right: auto; 
 	margin-left: auto;
-	border-bottom: 1px solid #00AAD8;
+	border-bottom: 1px solid #EF3C44;
 	z-index: 1000;
 }
 
@@ -153,7 +153,7 @@ z-index:210;
 		margin-left: auto;
 		height: auto;
 		text-align: center; 
-		background-color:#5aa1cf;
+		background-color:#000;
 		border:none;
 		background-image: url(baggrund.jpg);
 		background-repeat: repeat-y;
@@ -167,7 +167,7 @@ z-index:210;
 		margin-left: auto;
 		height: auto;
 		text-align: center; 
-		background-color:#5aa1cf;
+		background-color:#EF3C44;
 		border:none;
 		/*background-image: url(../images/baggrundsbund.jpg);*/
 		background-repeat: none;
@@ -237,7 +237,7 @@ margin-bottom: 0;
 margin-top: 0;
 margin-right: auto; 
 margin-left: auto;
-border-bottom: 1px solid #00AAD8;
+border-bottom: 1px solid #EF3C44;
 font-family: helvetica, arial, verdana, sans-serif;	
 text-align: center;
 letter-spacing: 3px;
@@ -266,7 +266,7 @@ padding-left: 5px;
 padding-right: 10px;
 text-decoration:none;
 vertical-align: top; /*Virker godt for Firefox.*/
-border-right: 1px solid #00AAD8;
+border-right: 1px solid #EF3C44;
 color: #000;
 }
 #menu ul li.uden_streg a{
@@ -279,7 +279,7 @@ border: none;
 color: #000;
 }
 #menu ul li a:hover {
-color: #5aa1cf;
+color: #EF3C44;
 text-decoration:none;
 /*vertical-align: middle;*/ 
 }

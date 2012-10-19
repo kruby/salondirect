@@ -7,6 +7,6 @@ module ViewerHelper
 	  end
 	  
 	  def pagetitle
-	    "Velkommen til Kruby"
+	    "Velkommen til Salon Direct"
     end
 end

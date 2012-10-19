@@ -39,3 +39,28 @@
 [10/13/12 11:02:57 +0200 Thomass-iMac.local (1139)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
 [10/13/12 11:02:57 +0200 Thomass-iMac.local (1139)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 1139
 [10/13/12 11:02:57 +0200 Thomass-iMac.local (1139)] INFO : Agent Log at /Users/thomas/Sites/kruby/log/newrelic_agent.log
+[10/17/12 18:08:58 +0200 Thomass-iMac.local (3830)] INFO : Dispatcher: webrick
+[10/17/12 18:08:58 +0200 Thomass-iMac.local (3830)] INFO : Application: salondirect.dk
+[10/17/12 18:08:58 +0200 Thomass-iMac.local (3830)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/17/12 18:08:58 +0200 Thomass-iMac.local (3830)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 3830
+[10/17/12 18:08:58 +0200 Thomass-iMac.local (3830)] INFO : Agent Log at /Users/thomas/Sites/salondirect/log/newrelic_agent.log
+[10/17/12 18:14:52 +0200 Thomass-iMac.local (3848)] INFO : Dispatcher: webrick
+[10/17/12 18:14:52 +0200 Thomass-iMac.local (3848)] INFO : Application: salondirect.dk
+[10/17/12 18:14:52 +0200 Thomass-iMac.local (3848)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/17/12 18:14:52 +0200 Thomass-iMac.local (3848)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 3848
+[10/17/12 18:14:52 +0200 Thomass-iMac.local (3848)] INFO : Agent Log at /Users/thomas/Sites/salondirect/log/newrelic_agent.log
+[10/17/12 18:27:41 +0200 Thomass-iMac.local (3879)] INFO : Dispatcher: webrick
+[10/17/12 18:27:41 +0200 Thomass-iMac.local (3879)] INFO : Application: salondirect.dk
+[10/17/12 18:27:41 +0200 Thomass-iMac.local (3879)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/17/12 18:27:41 +0200 Thomass-iMac.local (3879)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 3879
+[10/17/12 18:27:41 +0200 Thomass-iMac.local (3879)] INFO : Agent Log at /Users/thomas/Sites/salondirect/log/newrelic_agent.log
+[10/17/12 18:29:58 +0200 Thomass-iMac.local (3883)] INFO : Dispatcher: webrick
+[10/17/12 18:29:58 +0200 Thomass-iMac.local (3883)] INFO : Application: salondirect.dk
+[10/17/12 18:29:58 +0200 Thomass-iMac.local (3883)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/17/12 18:29:58 +0200 Thomass-iMac.local (3883)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 3883
+[10/17/12 18:29:58 +0200 Thomass-iMac.local (3883)] INFO : Agent Log at /Users/thomas/Sites/salondirect/log/newrelic_agent.log
+[10/19/12 10:13:43 +0200 Thomass-iMac.local (514)] INFO : Dispatcher: webrick
+[10/19/12 10:13:43 +0200 Thomass-iMac.local (514)] INFO : Application: salondirect.dk
+[10/19/12 10:13:43 +0200 Thomass-iMac.local (514)] WARN : Agent configured not to send data in this environment - edit newrelic.yml to change this
+[10/19/12 10:13:43 +0200 Thomass-iMac.local (514)] INFO : New Relic Ruby Agent 3.4.2.1 Initialized: pid = 514
+[10/19/12 10:13:43 +0200 Thomass-iMac.local (514)] INFO : Agent Log at /Users/thomas/Sites/salondirect/log/newrelic_agent.log
