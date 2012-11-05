@@ -2,6 +2,22 @@
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 }
 
+div#salon_italy {
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 48%;
+    width: 100%;
+}
+
+
+div#salon_italy a{
+	text-decoration: none;
+	color:#FF0000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
 br {
 	margin-bottom: 7px;
 }
@@ -11,13 +27,21 @@ body {
 	margin-right: auto; 
 	margin-left: auto;
 	text-align: center; 
-	background-color:#EF3C44;
+	background-color:#000000;
 	border:none;
 /*	background-image: url(../images/baggrund.jpg);*/
 	background-repeat: repeat-y;
 	background-position: center;
 }
 
+a#salon_italy {
+	color: #EF3C44;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 5px;
+	text-align: left;
+	text-decoration: none;
+}
 
 h1 {
 	font-size: 20px;

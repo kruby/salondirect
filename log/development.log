@@ -19442,3 +19442,1018 @@ Started GET "/assets/baggrund.jpg" for 127.0.0.1 at Fri Oct 19 10:13:53 +0200 20
 
 Started GET "/assets/ballon.jpg" for 127.0.0.1 at Fri Oct 19 10:13:53 +0200 2012
 [2758a4856512f876e83c7916c4eba2b8] [127.0.0.1] Served asset /ballon.jpg - 200 OK (2ms)
+[8b9fc392a6fd0e83f289a24f32334616] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 19 10:19:18 +0200 2012
+[8b9fc392a6fd0e83f289a24f32334616] [127.0.0.1] Processing by ViewerController#forside as HTML
+[8b9fc392a6fd0e83f289a24f32334616] [127.0.0.1]   [1m[35mPage Load (0.4ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1
+[8b9fc392a6fd0e83f289a24f32334616] [127.0.0.1]   [1m[36mPost Load (0.5ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10[0m
+[8b9fc392a6fd0e83f289a24f32334616] [127.0.0.1] Completed 500 Internal Server Error in 12ms
+[8b9fc392a6fd0e83f289a24f32334616] [127.0.0.1] 
+ActionView::MissingTemplate (Missing template viewer/show, application/show with {:locale=>[:da, :en], :handlers=>[:erb, :builder], :formats=>[:html]}. Searched in:
+  * "/Users/thomas/Sites/salondirect/app/views"
+):
+  app/controllers/viewer_controller.rb:36:in `forside'
+
+
+[8b9fc392a6fd0e83f289a24f32334616] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+[651e3cb3a7150d3e2ab9a46a109cb950] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 19 10:20:25 +0200 2012
+[651e3cb3a7150d3e2ab9a46a109cb950] [127.0.0.1] Processing by ViewerController#forside as HTML
+[651e3cb3a7150d3e2ab9a46a109cb950] [127.0.0.1]   [1m[35mPage Load (0.4ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1
+[651e3cb3a7150d3e2ab9a46a109cb950] [127.0.0.1]   [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10[0m
+[651e3cb3a7150d3e2ab9a46a109cb950] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.3ms)
+[651e3cb3a7150d3e2ab9a46a109cb950] [127.0.0.1] Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 0.8ms)
+[69de58c33879a4efa926210fa74dca65] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Fri Oct 19 10:20:25 +0200 2012
+[69de58c33879a4efa926210fa74dca65] [127.0.0.1] Served asset /salon_viewer.css - 304 Not Modified (0ms)
+[24117ac809b592d78c230e4de6b9ce9f] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Fri Oct 19 10:20:25 +0200 2012
+[24117ac809b592d78c230e4de6b9ce9f] [127.0.0.1] Served asset /salon_forside_blog.css - 304 Not Modified (0ms)
+[5775bb290f33615cba08a67b506d56f6] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Fri Oct 19 10:20:25 +0200 2012
+[5775bb290f33615cba08a67b506d56f6] [127.0.0.1] Served asset /salon_blog.css - 304 Not Modified (0ms)
+[24b86fd299df261926cafed96c605bab] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 19 10:20:25 +0200 2012
+[24b86fd299df261926cafed96c605bab] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[7781ce9412b76cb9805d1e219caa1480] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Fri Oct 19 10:20:25 +0200 2012
+[7781ce9412b76cb9805d1e219caa1480] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[7781ce9412b76cb9805d1e219caa1480] [127.0.0.1] Processing by AssetsController#show as JS
+[7781ce9412b76cb9805d1e219caa1480] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[7781ce9412b76cb9805d1e219caa1480] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[7781ce9412b76cb9805d1e219caa1480] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[7781ce9412b76cb9805d1e219caa1480] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 19 10:20:25 +0200 2012
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1] Processing by SessionsController#new as HTML
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position[0m
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (4.4ms)
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.6ms)
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position[0m
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.1ms)
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.3ms)
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (32.0ms)
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (34.7ms)
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   Rendered layouts/_menu.html.erb (37.6ms)
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (41.4ms)
+[4fc7cde33da13b7a78f5b0a501503e35] [127.0.0.1] Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 2.4ms)
+[cb4e73f66d8d25f84238040af24adfd1] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 19 10:23:48 +0200 2012
+[cb4e73f66d8d25f84238040af24adfd1] [127.0.0.1] Processing by ViewerController#forside as HTML
+[cb4e73f66d8d25f84238040af24adfd1] [127.0.0.1]   [1m[36mPage Load (0.4ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1[0m
+[cb4e73f66d8d25f84238040af24adfd1] [127.0.0.1]   [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10
+[cb4e73f66d8d25f84238040af24adfd1] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.3ms)
+[cb4e73f66d8d25f84238040af24adfd1] [127.0.0.1] Completed 200 OK in 12ms (Views: 6.3ms | ActiveRecord: 0.8ms)
+[5f669af8cfdc9a7f6bdf401894bfb674] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Fri Oct 19 10:23:48 +0200 2012
+[5f669af8cfdc9a7f6bdf401894bfb674] [127.0.0.1] Served asset /salon_viewer.css - 304 Not Modified (0ms)
+[4a2a1d8e3ae60686cacd8ece20c790fa] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Fri Oct 19 10:23:48 +0200 2012
+[4a2a1d8e3ae60686cacd8ece20c790fa] [127.0.0.1] Served asset /salon_forside_blog.css - 304 Not Modified (0ms)
+[5c7df098fa2562704ef319f2a2183877] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Fri Oct 19 10:23:48 +0200 2012
+[5c7df098fa2562704ef319f2a2183877] [127.0.0.1] Served asset /salon_blog.css - 304 Not Modified (0ms)
+[075ee8b627afceed668162425623aa16] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 19 10:23:48 +0200 2012
+[075ee8b627afceed668162425623aa16] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[cb5d058d789e5574e5475bc6d0574165] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Fri Oct 19 10:23:48 +0200 2012
+[cb5d058d789e5574e5475bc6d0574165] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[cb5d058d789e5574e5475bc6d0574165] [127.0.0.1] Processing by AssetsController#show as JS
+[cb5d058d789e5574e5475bc6d0574165] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[cb5d058d789e5574e5475bc6d0574165] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[cb5d058d789e5574e5475bc6d0574165] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[cb5d058d789e5574e5475bc6d0574165] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 19 10:23:48 +0200 2012
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1] Processing by SessionsController#new as HTML
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   [1m[36mContent Load (0.6ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position[0m
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.1ms)
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position[0m
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (2.8ms)
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position[0m
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.2ms)
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (133.4ms)
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (136.0ms)
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   Rendered layouts/_menu.html.erb (139.2ms)
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (142.9ms)
+[07eb31fcc0a8f2015c038dc9fbe83568] [127.0.0.1] Completed 200 OK in 149ms (Views: 145.8ms | ActiveRecord: 2.2ms)
+[c431eedb3c2bb94f0ad32d3ed4986a70] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 19 10:26:39 +0200 2012
+[c431eedb3c2bb94f0ad32d3ed4986a70] [127.0.0.1] Processing by ViewerController#forside as HTML
+[c431eedb3c2bb94f0ad32d3ed4986a70] [127.0.0.1]   [1m[35mPage Load (0.5ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1
+[c431eedb3c2bb94f0ad32d3ed4986a70] [127.0.0.1]   [1m[36mPost Load (0.6ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10[0m
+[c431eedb3c2bb94f0ad32d3ed4986a70] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.3ms)
+[c431eedb3c2bb94f0ad32d3ed4986a70] [127.0.0.1] Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 1.0ms)
+[00d03834a3916fe931fe810cb57dd1d9] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Fri Oct 19 10:26:39 +0200 2012
+[00d03834a3916fe931fe810cb57dd1d9] [127.0.0.1] Compiled salon_viewer.css  (321ms)  (pid 514)
+[00d03834a3916fe931fe810cb57dd1d9] [127.0.0.1] Served asset /salon_viewer.css - 200 OK (334ms)
+[23b58da432412e0cbcb501debe139425] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Fri Oct 19 10:26:40 +0200 2012
+[23b58da432412e0cbcb501debe139425] [127.0.0.1] Served asset /salon_forside_blog.css - 304 Not Modified (0ms)
+[d361063bab6b4f8a9d411cf697a17064] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Fri Oct 19 10:26:40 +0200 2012
+[d361063bab6b4f8a9d411cf697a17064] [127.0.0.1] Served asset /salon_blog.css - 304 Not Modified (0ms)
+[740f67470cc0fb1e131cfc925c01e81f] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 19 10:26:40 +0200 2012
+[740f67470cc0fb1e131cfc925c01e81f] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[4e8540cdc8b9acca65e931cc70968c13] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Fri Oct 19 10:26:40 +0200 2012
+[4e8540cdc8b9acca65e931cc70968c13] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[4e8540cdc8b9acca65e931cc70968c13] [127.0.0.1] Processing by AssetsController#show as JS
+[4e8540cdc8b9acca65e931cc70968c13] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[4e8540cdc8b9acca65e931cc70968c13] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[4e8540cdc8b9acca65e931cc70968c13] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[4e8540cdc8b9acca65e931cc70968c13] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 19 10:26:40 +0200 2012
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1] Processing by SessionsController#new as HTML
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   [1m[35mContent Load (0.6ms)[0m  SELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position[0m
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.4ms)
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (4.0ms)
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position[0m
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (2.9ms)
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.2ms)
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (32.6ms)
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (36.3ms)
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   Rendered layouts/_menu.html.erb (149.8ms)
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (153.6ms)
+[c807d27e097492dacb2a0f3a1f77eac0] [127.0.0.1] Completed 200 OK in 160ms (Views: 156.4ms | ActiveRecord: 2.4ms)
+[db4e9d78b1413b5d2ae97b812eed02ca] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 19 10:27:17 +0200 2012
+[db4e9d78b1413b5d2ae97b812eed02ca] [127.0.0.1] Processing by ViewerController#forside as HTML
+[db4e9d78b1413b5d2ae97b812eed02ca] [127.0.0.1]   [1m[36mPage Load (0.4ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1[0m
+[db4e9d78b1413b5d2ae97b812eed02ca] [127.0.0.1]   [1m[35mPost Load (0.4ms)[0m  SELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10
+[db4e9d78b1413b5d2ae97b812eed02ca] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.1ms)
+[db4e9d78b1413b5d2ae97b812eed02ca] [127.0.0.1] Completed 200 OK in 12ms (Views: 5.7ms | ActiveRecord: 0.8ms)
+[471744528cdc1910a0f89f186c2c23c5] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Fri Oct 19 10:27:18 +0200 2012
+[471744528cdc1910a0f89f186c2c23c5] [127.0.0.1] Compiled salon_viewer.css  (80ms)  (pid 514)
+[471744528cdc1910a0f89f186c2c23c5] [127.0.0.1] Served asset /salon_viewer.css - 200 OK (94ms)
+[fa3fd66d6c84143cc2cf3688b71fbf29] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Fri Oct 19 10:27:18 +0200 2012
+[fa3fd66d6c84143cc2cf3688b71fbf29] [127.0.0.1] Served asset /salon_forside_blog.css - 304 Not Modified (0ms)
+[356defe6b5cd6f3d5c5f3f1448cad070] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Fri Oct 19 10:27:18 +0200 2012
+[356defe6b5cd6f3d5c5f3f1448cad070] [127.0.0.1] Served asset /salon_blog.css - 304 Not Modified (0ms)
+[15e0b1153baf0a39bc3486750ab5c7e8] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 19 10:27:18 +0200 2012
+[15e0b1153baf0a39bc3486750ab5c7e8] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[5edabd5f8ef8ba78219586026be6942f] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Fri Oct 19 10:27:18 +0200 2012
+[5edabd5f8ef8ba78219586026be6942f] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[5edabd5f8ef8ba78219586026be6942f] [127.0.0.1] Processing by AssetsController#show as JS
+[5edabd5f8ef8ba78219586026be6942f] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[5edabd5f8ef8ba78219586026be6942f] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[5edabd5f8ef8ba78219586026be6942f] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[5edabd5f8ef8ba78219586026be6942f] [127.0.0.1] Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 19 10:27:18 +0200 2012
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1] Processing by SessionsController#new as HTML
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position[0m
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.7ms)
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position[0m
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.1ms)
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.1ms)
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position[0m
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (2.9ms)
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (29.9ms)
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (32.5ms)
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   Rendered layouts/_menu.html.erb (35.4ms)
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (39.0ms)
+[1c1e42fbb3ff373be921383d2ca38c2a] [127.0.0.1] Completed 200 OK in 45ms (Views: 42.2ms | ActiveRecord: 2.3ms)
+Connecting to database specified by database.yml
+Starting the New Relic Agent.
+NewRelic Agent Developer Mode enabled.
+To view performance information, go to http://localhost:3000/newrelic
+[3f92123cd75ce3a1b889b50483d87323] [127.0.0.1] 
+
+Started GET "/timeliste" for 127.0.0.1 at Fri Oct 26 12:52:36 +0200 2012
+[3f92123cd75ce3a1b889b50483d87323] [127.0.0.1] Processing by HoursController#timeliste as HTML
+[3f92123cd75ce3a1b889b50483d87323] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[3f92123cd75ce3a1b889b50483d87323] [127.0.0.1] Filter chain halted as :logged_in_as_user? rendered or redirected
+[3f92123cd75ce3a1b889b50483d87323] [127.0.0.1] Completed 302 Found in 91ms (ActiveRecord: 0.0ms)
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 26 12:52:36 +0200 2012
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1] Processing by SessionsController#new as HTML
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   [1m[36mContent Load (5.3ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position[0m
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (83.9ms)
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   [1m[36mContent Load (0.6ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position[0m
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.6ms)
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position[0m
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.7ms)
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (245.7ms)
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (249.7ms)
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   Rendered layouts/_menu.html.erb (253.9ms)
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (261.9ms)
+[df92698ebcbb20a53769b603c7662ea4] [127.0.0.1] Completed 200 OK in 274ms (Views: 260.4ms | ActiveRecord: 12.6ms)
+[7d36dc7c6809167a61ce05016d888769] [127.0.0.1] 
+
+Started GET "/assets/salon_adm.css" for 127.0.0.1 at Fri Oct 26 12:52:36 +0200 2012
+[7d36dc7c6809167a61ce05016d888769] [127.0.0.1] Served asset /salon_adm.css - 200 OK (8ms)
+[5a8a6a8a401d5cb3f11bffe9665a1281] [127.0.0.1] 
+
+Started GET "/assets/salon_tabeller.css" for 127.0.0.1 at Fri Oct 26 12:52:36 +0200 2012
+[5a8a6a8a401d5cb3f11bffe9665a1281] [127.0.0.1] Served asset /salon_tabeller.css - 200 OK (5ms)
+[5e2aad09f4c9561ade91bf5fce1b4be9] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 26 12:52:36 +0200 2012
+[5e2aad09f4c9561ade91bf5fce1b4be9] [127.0.0.1] Served asset /application.js - 304 Not Modified (7ms)
+[178e0329206fcf32be5d8156b10efc2d] [127.0.0.1] 
+
+Started GET "/assets/menu_baggrund.gif" for 127.0.0.1 at Fri Oct 26 12:52:36 +0200 2012
+[178e0329206fcf32be5d8156b10efc2d] [127.0.0.1] Served asset /menu_baggrund.gif - 304 Not Modified (4ms)
+[8de71e7a39af93c15d2ae85b49119296] [127.0.0.1] 
+
+Started GET "/assets/top_adm.jpg" for 127.0.0.1 at Fri Oct 26 12:52:36 +0200 2012
+[8de71e7a39af93c15d2ae85b49119296] [127.0.0.1] Served asset /top_adm.jpg - 304 Not Modified (2ms)
+[f0fd65edcce50c72ae2db7ed7aef529c] [127.0.0.1] 
+
+Started GET "/images/mini.gif" for 127.0.0.1 at Fri Oct 26 12:52:37 +0200 2012
+[f0fd65edcce50c72ae2db7ed7aef529c] [127.0.0.1] 
+ActionController::RoutingError (No route matches [GET] "/images/mini.gif"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  activesupport (3.2.8) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+[f0fd65edcce50c72ae2db7ed7aef529c] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+[6a4abe0e7901e649d5c0e74776ce6ded] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 26 12:52:41 +0200 2012
+[6a4abe0e7901e649d5c0e74776ce6ded] [127.0.0.1] Processing by ViewerController#forside as HTML
+[6a4abe0e7901e649d5c0e74776ce6ded] [127.0.0.1]   [1m[35mPage Load (1.3ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1
+[6a4abe0e7901e649d5c0e74776ce6ded] [127.0.0.1]   [1m[36mPost Load (2.6ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10[0m
+[6a4abe0e7901e649d5c0e74776ce6ded] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.3ms)
+[6a4abe0e7901e649d5c0e74776ce6ded] [127.0.0.1] Completed 200 OK in 70ms (Views: 8.3ms | ActiveRecord: 10.4ms)
+[480734f4f4b802871a793bf3612fa644] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Fri Oct 26 12:52:41 +0200 2012
+[480734f4f4b802871a793bf3612fa644] [127.0.0.1] Served asset /defaults.js - 404 Not Found (6ms)
+[480734f4f4b802871a793bf3612fa644] [127.0.0.1] Processing by AssetsController#show as JS
+[480734f4f4b802871a793bf3612fa644] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[480734f4f4b802871a793bf3612fa644] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[480734f4f4b802871a793bf3612fa644] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[480734f4f4b802871a793bf3612fa644] [127.0.0.1] Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+[db929ce658fe18a54686ed94ed6005b2] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Fri Oct 26 12:52:41 +0200 2012
+[db929ce658fe18a54686ed94ed6005b2] [127.0.0.1] Served asset /salon_blog.css - 200 OK (7ms)
+[3d58aed3254433ba6376fb6f79c265e3] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Fri Oct 26 12:52:41 +0200 2012
+[3d58aed3254433ba6376fb6f79c265e3] [127.0.0.1] Served asset /salon_forside_blog.css - 200 OK (6ms)
+[2c72f12d11c3b29c20a040b44ba7e478] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Fri Oct 26 12:52:41 +0200 2012
+[2c72f12d11c3b29c20a040b44ba7e478] [127.0.0.1] Served asset /salon_viewer.css - 200 OK (5ms)
+[87ac15272c9da9184fc79da8d3003a1c] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 26 12:52:41 +0200 2012
+[87ac15272c9da9184fc79da8d3003a1c] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 26 12:52:41 +0200 2012
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1] Processing by SessionsController#new as HTML
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   [1m[35mContent Load (0.6ms)[0m  SELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position[0m
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.1ms)
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   [1m[35mContent Load (0.6ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.8ms)
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position[0m
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.4ms)
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.3ms)
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (34.4ms)
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (37.1ms)
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   Rendered layouts/_menu.html.erb (39.8ms)
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (43.6ms)
+[a6c4538e461a3d9a28c324100870e457] [127.0.0.1] Completed 200 OK in 129ms (Views: 125.4ms | ActiveRecord: 2.5ms)
+[706b4ac0ae9c3df8ee55cab8283f4758] [127.0.0.1] 
+
+Started GET "/images/mini.gif" for 127.0.0.1 at Fri Oct 26 12:52:41 +0200 2012
+[706b4ac0ae9c3df8ee55cab8283f4758] [127.0.0.1] 
+ActionController::RoutingError (No route matches [GET] "/images/mini.gif"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  activesupport (3.2.8) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+[706b4ac0ae9c3df8ee55cab8283f4758] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+[5bdb4bc01fb542e817671e8c9bcbee20] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 26 12:53:20 +0200 2012
+[5bdb4bc01fb542e817671e8c9bcbee20] [127.0.0.1] Processing by ViewerController#forside as HTML
+[5bdb4bc01fb542e817671e8c9bcbee20] [127.0.0.1]   [1m[36mPage Load (0.7ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1[0m
+[5bdb4bc01fb542e817671e8c9bcbee20] [127.0.0.1]   [1m[35mPost Load (0.6ms)[0m  SELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10
+[5bdb4bc01fb542e817671e8c9bcbee20] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.1ms)
+[5bdb4bc01fb542e817671e8c9bcbee20] [127.0.0.1] Completed 200 OK in 12ms (Views: 5.3ms | ActiveRecord: 1.3ms)
+[c3ab55ff13d79554d988204cb2b88f2b] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Fri Oct 26 12:53:20 +0200 2012
+[c3ab55ff13d79554d988204cb2b88f2b] [127.0.0.1] Served asset /salon_viewer.css - 200 OK (0ms)
+[89e9e741f8631d0af97b82c22e719cc2] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Fri Oct 26 12:53:20 +0200 2012
+[89e9e741f8631d0af97b82c22e719cc2] [127.0.0.1] Served asset /salon_forside_blog.css - 200 OK (0ms)
+[ccd6af3a864da39ac1e66148bacb4e2b] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Fri Oct 26 12:53:20 +0200 2012
+[ccd6af3a864da39ac1e66148bacb4e2b] [127.0.0.1] Served asset /salon_blog.css - 200 OK (0ms)
+[15b09bfe0fc489be23e9feb1758163f9] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 26 12:53:20 +0200 2012
+[15b09bfe0fc489be23e9feb1758163f9] [127.0.0.1] Served asset /application.js - 200 OK (0ms)
+[b87c86df3eb71e91d4775f11c829f476] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Fri Oct 26 12:53:20 +0200 2012
+[b87c86df3eb71e91d4775f11c829f476] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[b87c86df3eb71e91d4775f11c829f476] [127.0.0.1] Processing by AssetsController#show as JS
+[b87c86df3eb71e91d4775f11c829f476] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[b87c86df3eb71e91d4775f11c829f476] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[b87c86df3eb71e91d4775f11c829f476] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[b87c86df3eb71e91d4775f11c829f476] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 26 12:53:20 +0200 2012
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1] Processing by SessionsController#new as */*
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position[0m
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.8ms)
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   [1m[36mContent Load (0.7ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position[0m
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (84.4ms)
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.8ms)
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position[0m
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (114.0ms)
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (117.0ms)
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   Rendered layouts/_menu.html.erb (119.8ms)
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (124.2ms)
+[0a1a5d87fedc55452b9e4318dc3b8493] [127.0.0.1] Completed 200 OK in 140ms (Views: 137.0ms | ActiveRecord: 2.5ms)
+[a489fa3030f9a034710d894fbe408de2] [127.0.0.1] 
+
+Started GET "/images/mini.gif" for 127.0.0.1 at Fri Oct 26 13:47:35 +0200 2012
+[a489fa3030f9a034710d894fbe408de2] [127.0.0.1] 
+ActionController::RoutingError (No route matches [GET] "/images/mini.gif"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  activesupport (3.2.8) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+[a489fa3030f9a034710d894fbe408de2] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+[ae3b14992f8054aa752d2a8e3e4bc02a] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 26 13:51:18 +0200 2012
+[ae3b14992f8054aa752d2a8e3e4bc02a] [127.0.0.1] Processing by ViewerController#forside as HTML
+[ae3b14992f8054aa752d2a8e3e4bc02a] [127.0.0.1]   [1m[35mPage Load (0.7ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1
+[ae3b14992f8054aa752d2a8e3e4bc02a] [127.0.0.1]   [1m[36mPost Load (1.7ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10[0m
+[ae3b14992f8054aa752d2a8e3e4bc02a] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.1ms)
+[ae3b14992f8054aa752d2a8e3e4bc02a] [127.0.0.1] Completed 200 OK in 17ms (Views: 9.0ms | ActiveRecord: 2.4ms)
+[7e3303f54a9d1abee79bf114950919aa] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Fri Oct 26 13:51:18 +0200 2012
+[7e3303f54a9d1abee79bf114950919aa] [127.0.0.1] Compiled salon_viewer.css  (468ms)  (pid 39566)
+[7e3303f54a9d1abee79bf114950919aa] [127.0.0.1] Served asset /salon_viewer.css - 200 OK (486ms)
+[79a12d5232b23dfc99070ba92d5a1aeb] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Fri Oct 26 13:51:18 +0200 2012
+[79a12d5232b23dfc99070ba92d5a1aeb] [127.0.0.1] Served asset /salon_forside_blog.css - 304 Not Modified (0ms)
+[41ee9c2fb82aea1739d6602786e8f68d] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Fri Oct 26 13:51:18 +0200 2012
+[41ee9c2fb82aea1739d6602786e8f68d] [127.0.0.1] Served asset /salon_blog.css - 304 Not Modified (0ms)
+[92ed164f8f2be4a1731e984bb786ef23] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 26 13:51:18 +0200 2012
+[92ed164f8f2be4a1731e984bb786ef23] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[08dfba234dd0acd226a69847c04ad420] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Fri Oct 26 13:51:18 +0200 2012
+[08dfba234dd0acd226a69847c04ad420] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[08dfba234dd0acd226a69847c04ad420] [127.0.0.1] Processing by AssetsController#show as JS
+[08dfba234dd0acd226a69847c04ad420] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[08dfba234dd0acd226a69847c04ad420] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[08dfba234dd0acd226a69847c04ad420] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[08dfba234dd0acd226a69847c04ad420] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 26 13:51:19 +0200 2012
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1] Processing by SessionsController#new as HTML
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position[0m
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.8ms)
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position[0m
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (4.1ms)
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (98.9ms)
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (128.7ms)
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (131.8ms)
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   Rendered layouts/_menu.html.erb (134.6ms)
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (138.3ms)
+[bf1a61b87837a4825edd5688e4620988] [127.0.0.1] Completed 200 OK in 144ms (Views: 140.9ms | ActiveRecord: 2.3ms)
+[716ed390a48138e59851342da688f565] [127.0.0.1] 
+
+Started GET "/images/mini.gif" for 127.0.0.1 at Fri Oct 26 13:51:19 +0200 2012
+[716ed390a48138e59851342da688f565] [127.0.0.1] 
+ActionController::RoutingError (No route matches [GET] "/images/mini.gif"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  activesupport (3.2.8) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+[716ed390a48138e59851342da688f565] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+[8f256dbc9788b4497bdacd99e128ebdd] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 26 13:52:12 +0200 2012
+[8f256dbc9788b4497bdacd99e128ebdd] [127.0.0.1] Processing by ViewerController#forside as HTML
+[8f256dbc9788b4497bdacd99e128ebdd] [127.0.0.1]   [1m[36mPage Load (0.5ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1[0m
+[8f256dbc9788b4497bdacd99e128ebdd] [127.0.0.1]   [1m[35mPost Load (0.8ms)[0m  SELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10
+[8f256dbc9788b4497bdacd99e128ebdd] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.1ms)
+[8f256dbc9788b4497bdacd99e128ebdd] [127.0.0.1] Completed 200 OK in 13ms (Views: 6.1ms | ActiveRecord: 1.2ms)
+[1d750044d84c065665cea647a067bb2d] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Fri Oct 26 13:52:12 +0200 2012
+[1d750044d84c065665cea647a067bb2d] [127.0.0.1] Compiled salon_viewer.css  (190ms)  (pid 39566)
+[1d750044d84c065665cea647a067bb2d] [127.0.0.1] Served asset /salon_viewer.css - 200 OK (204ms)
+[0ea4138cad6a58f043eb60c00f4b4b36] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Fri Oct 26 13:52:12 +0200 2012
+[0ea4138cad6a58f043eb60c00f4b4b36] [127.0.0.1] Served asset /salon_forside_blog.css - 304 Not Modified (0ms)
+[2f2823d40fd687e644365d9761606e8e] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Fri Oct 26 13:52:12 +0200 2012
+[2f2823d40fd687e644365d9761606e8e] [127.0.0.1] Served asset /salon_blog.css - 304 Not Modified (0ms)
+[9e9d634011014789f894b92e94b0f6f2] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 26 13:52:12 +0200 2012
+[9e9d634011014789f894b92e94b0f6f2] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[93687038e5a7608e669cf58a34d9f4c4] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Fri Oct 26 13:52:12 +0200 2012
+[93687038e5a7608e669cf58a34d9f4c4] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[93687038e5a7608e669cf58a34d9f4c4] [127.0.0.1] Processing by AssetsController#show as JS
+[93687038e5a7608e669cf58a34d9f4c4] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[93687038e5a7608e669cf58a34d9f4c4] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[93687038e5a7608e669cf58a34d9f4c4] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[93687038e5a7608e669cf58a34d9f4c4] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 26 13:52:12 +0200 2012
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1] Processing by SessionsController#new as HTML
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position[0m
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.4ms)
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position[0m
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.6ms)
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position[0m
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (130.2ms)
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (133.3ms)
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   Rendered layouts/_menu.html.erb (136.1ms)
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (139.8ms)
+[6caf3eca364f658ccd1063475442735c] [127.0.0.1] Completed 200 OK in 146ms (Views: 142.9ms | ActiveRecord: 2.2ms)
+[979f5ff37c50d93e1dcc7091cc09bf78] [127.0.0.1] 
+
+Started GET "/images/mini.gif" for 127.0.0.1 at Fri Oct 26 13:52:13 +0200 2012
+[979f5ff37c50d93e1dcc7091cc09bf78] [127.0.0.1] 
+ActionController::RoutingError (No route matches [GET] "/images/mini.gif"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  activesupport (3.2.8) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+[979f5ff37c50d93e1dcc7091cc09bf78] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+[78e83200a4432aba2e6089c314f44c8c] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Fri Oct 26 13:53:42 +0200 2012
+[78e83200a4432aba2e6089c314f44c8c] [127.0.0.1] Processing by ViewerController#forside as HTML
+[78e83200a4432aba2e6089c314f44c8c] [127.0.0.1]   [1m[35mPage Load (0.4ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1
+[78e83200a4432aba2e6089c314f44c8c] [127.0.0.1]   [1m[36mPost Load (0.4ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10[0m
+[78e83200a4432aba2e6089c314f44c8c] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.3ms)
+[78e83200a4432aba2e6089c314f44c8c] [127.0.0.1] Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 0.8ms)
+[202172fe5f5625118fab85cfe3519b1d] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Fri Oct 26 13:53:42 +0200 2012
+[202172fe5f5625118fab85cfe3519b1d] [127.0.0.1] Compiled salon_viewer.css  (194ms)  (pid 39566)
+[202172fe5f5625118fab85cfe3519b1d] [127.0.0.1] Served asset /salon_viewer.css - 200 OK (210ms)
+[244be24ef16d98aadb7d1df5d2666163] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Fri Oct 26 13:53:42 +0200 2012
+[244be24ef16d98aadb7d1df5d2666163] [127.0.0.1] Served asset /salon_forside_blog.css - 304 Not Modified (0ms)
+[7bae9accde38a9bd1b687de43ae13c0d] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Fri Oct 26 13:53:42 +0200 2012
+[7bae9accde38a9bd1b687de43ae13c0d] [127.0.0.1] Served asset /salon_blog.css - 304 Not Modified (0ms)
+[84aaf673b37bd0520b7b25e196da6c85] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Fri Oct 26 13:53:42 +0200 2012
+[84aaf673b37bd0520b7b25e196da6c85] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[9cdb7758291be0b8d2c2147a24b029c2] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Fri Oct 26 13:53:42 +0200 2012
+[9cdb7758291be0b8d2c2147a24b029c2] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[9cdb7758291be0b8d2c2147a24b029c2] [127.0.0.1] Processing by AssetsController#show as JS
+[9cdb7758291be0b8d2c2147a24b029c2] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[9cdb7758291be0b8d2c2147a24b029c2] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[9cdb7758291be0b8d2c2147a24b029c2] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[9cdb7758291be0b8d2c2147a24b029c2] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Fri Oct 26 13:53:42 +0200 2012
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1] Processing by SessionsController#new as HTML
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position[0m
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.8ms)
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.2ms)
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position[0m
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   [1m[35mContent Load (0.6ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.9ms)
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (129.5ms)
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (132.4ms)
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   Rendered layouts/_menu.html.erb (135.5ms)
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (139.1ms)
+[dfe1305efa3032f6f7ef89d07d310ae5] [127.0.0.1] Completed 200 OK in 145ms (Views: 141.8ms | ActiveRecord: 2.4ms)
+[7993738ddee060b9c7d21b643ee6f0c3] [127.0.0.1] 
+
+Started GET "/images/mini.gif" for 127.0.0.1 at Fri Oct 26 13:53:42 +0200 2012
+[7993738ddee060b9c7d21b643ee6f0c3] [127.0.0.1] 
+ActionController::RoutingError (No route matches [GET] "/images/mini.gif"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  activesupport (3.2.8) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+[7993738ddee060b9c7d21b643ee6f0c3] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+Connecting to database specified by database.yml
+Starting the New Relic Agent.
+NewRelic Agent Developer Mode enabled.
+To view performance information, go to http://localhost:3000/newrelic
+Connecting to database specified by database.yml
+Starting the New Relic Agent.
+NewRelic Agent Developer Mode enabled.
+To view performance information, go to http://localhost:3000/newrelic
+[7b7afd8663ac7cd94eedd4e3a37df4ff] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at 2012-11-05 17:16:32 +0100
+[7b7afd8663ac7cd94eedd4e3a37df4ff] [127.0.0.1] 
+SyntaxError (/Users/thomas/sites/salondirect/app/controllers/viewer_controller.rb:12: invalid multibyte char (US-ASCII)
+/Users/thomas/sites/salondirect/app/controllers/viewer_controller.rb:12: invalid multibyte char (US-ASCII)
+/Users/thomas/sites/salondirect/app/controllers/viewer_controller.rb:12: syntax error, unexpected $end, expecting keyword_end
+    @pagetitle = @page.title rescue 'Indhold følger snarest'
+                                                ^):
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.8) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.8) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  newrelic_rpm (3.4.2.1) lib/new_relic/rack/developer_mode.rb:24:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__4155124503701596521__call__3021264902298754791__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `block in call'
+  activesupport (3.2.8) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+[7b7afd8663ac7cd94eedd4e3a37df4ff] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.7ms)
+Connecting to database specified by database.yml
+Starting the New Relic Agent.
+NewRelic Agent Developer Mode enabled.
+To view performance information, go to http://localhost:3000/newrelic
+[8d936228925ddc5992d49e21ebf0dfa3] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Mon Nov 05 17:28:53 +0100 2012
+[8d936228925ddc5992d49e21ebf0dfa3] [127.0.0.1] Processing by ViewerController#forside as HTML
+[8d936228925ddc5992d49e21ebf0dfa3] [127.0.0.1]   [1m[36mPage Load (3.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1[0m
+[8d936228925ddc5992d49e21ebf0dfa3] [127.0.0.1]   [1m[35mPost Load (2.6ms)[0m  SELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10
+[8d936228925ddc5992d49e21ebf0dfa3] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (2.4ms)
+[8d936228925ddc5992d49e21ebf0dfa3] [127.0.0.1] Completed 200 OK in 167ms (Views: 15.0ms | ActiveRecord: 13.6ms)
+[7d1a3a53c89d3e8e8655b51bdc4d1702] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Mon Nov 05 17:28:53 +0100 2012
+[7d1a3a53c89d3e8e8655b51bdc4d1702] [127.0.0.1] Served asset /salon_viewer.css - 200 OK (8ms)
+[509eddf951bba889b4d3dea58e8e2223] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Mon Nov 05 17:28:53 +0100 2012
+[509eddf951bba889b4d3dea58e8e2223] [127.0.0.1] Served asset /salon_forside_blog.css - 200 OK (6ms)
+[0e8683d8fea9c45afe093e51ec694045] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Mon Nov 05 17:28:53 +0100 2012
+[0e8683d8fea9c45afe093e51ec694045] [127.0.0.1] Served asset /salon_blog.css - 200 OK (5ms)
+[7ce6ef179a7980d2686c3c0877c09582] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Mon Nov 05 17:28:53 +0100 2012
+[7ce6ef179a7980d2686c3c0877c09582] [127.0.0.1] Served asset /application.js - 200 OK (9ms)
+[a008a6434c99e35dd6fda69d665740bf] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Mon Nov 05 17:28:53 +0100 2012
+[a008a6434c99e35dd6fda69d665740bf] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[a008a6434c99e35dd6fda69d665740bf] [127.0.0.1] Processing by AssetsController#show as JS
+[a008a6434c99e35dd6fda69d665740bf] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[a008a6434c99e35dd6fda69d665740bf] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[a008a6434c99e35dd6fda69d665740bf] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[a008a6434c99e35dd6fda69d665740bf] [127.0.0.1] Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Mon Nov 05 17:28:53 +0100 2012
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1] Processing by SessionsController#new as HTML
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   [1m[36mContent Load (3.8ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position[0m
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (14.1ms)
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position[0m
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.2ms)
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position[0m
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.2ms)
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (275.4ms)
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (280.9ms)
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   Rendered layouts/_menu.html.erb (285.2ms)
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (291.0ms)
+[1f728ef4ef4d2a8dc5a06e20c2cb551d] [127.0.0.1] Completed 200 OK in 307ms (Views: 296.8ms | ActiveRecord: 8.9ms)
+[1dd39ba19802fc92aa8b19ed45042359] [127.0.0.1] 
+
+Started GET "/images/mini.gif" for 127.0.0.1 at Mon Nov 05 17:28:54 +0100 2012
+[1dd39ba19802fc92aa8b19ed45042359] [127.0.0.1] 
+ActionController::RoutingError (No route matches [GET] "/images/mini.gif"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  activesupport (3.2.8) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+[1dd39ba19802fc92aa8b19ed45042359] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+[11ff5a934694ada6ccb3f28eb93ee2d2] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Mon Nov 05 17:31:29 +0100 2012
+[11ff5a934694ada6ccb3f28eb93ee2d2] [127.0.0.1] Processing by ViewerController#forside as HTML
+[11ff5a934694ada6ccb3f28eb93ee2d2] [127.0.0.1]   [1m[35mPage Load (0.4ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1
+[11ff5a934694ada6ccb3f28eb93ee2d2] [127.0.0.1]   [1m[36mPost Load (0.8ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10[0m
+[11ff5a934694ada6ccb3f28eb93ee2d2] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.3ms)
+[11ff5a934694ada6ccb3f28eb93ee2d2] [127.0.0.1] Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 1.2ms)
+[044897f62816a445acd3d746047ca32c] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Mon Nov 05 17:31:29 +0100 2012
+[044897f62816a445acd3d746047ca32c] [127.0.0.1] Served asset /salon_viewer.css - 304 Not Modified (0ms)
+[5d8908103784528703a547ef0aaf7eef] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Mon Nov 05 17:31:29 +0100 2012
+[5d8908103784528703a547ef0aaf7eef] [127.0.0.1] Served asset /salon_forside_blog.css - 304 Not Modified (0ms)
+[baef42aef9a7d6654dc0a4071dd2d509] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Mon Nov 05 17:31:29 +0100 2012
+[baef42aef9a7d6654dc0a4071dd2d509] [127.0.0.1] Served asset /salon_blog.css - 304 Not Modified (0ms)
+[cc3d5cd4d76f582275892ad0ee4b07a5] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Mon Nov 05 17:31:29 +0100 2012
+[cc3d5cd4d76f582275892ad0ee4b07a5] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[d653b20090157d9572053bb26844335c] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Mon Nov 05 17:31:29 +0100 2012
+[d653b20090157d9572053bb26844335c] [127.0.0.1] Served asset /defaults.js - 404 Not Found (5ms)
+[d653b20090157d9572053bb26844335c] [127.0.0.1] Processing by AssetsController#show as JS
+[d653b20090157d9572053bb26844335c] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[d653b20090157d9572053bb26844335c] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[d653b20090157d9572053bb26844335c] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[d653b20090157d9572053bb26844335c] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Mon Nov 05 17:31:29 +0100 2012
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1] Processing by SessionsController#new as HTML
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position[0m
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (4.3ms)
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.1ms)
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position[0m
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.1ms)
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (80.7ms)
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (108.4ms)
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (111.1ms)
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered layouts/_menu.html.erb (113.8ms)
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (117.3ms)
+[f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1] Completed 200 OK in 124ms (Views: 120.6ms | ActiveRecord: 2.2ms)
