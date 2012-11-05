@@ -12,7 +12,6 @@ class User < ActiveRecord::Base
   scope :user, where("category = ?", 'User')
   scope :with_relation_id, where('relation_id IS NOT NULL')
   
-  
   attr_accessor :password
   before_save :encrypt_password
   
