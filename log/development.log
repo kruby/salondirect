@@ -20457,3 +20457,590 @@ Started GET "/log_in" for 127.0.0.1 at Mon Nov 05 17:31:29 +0100 2012
 [f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered layouts/_menu.html.erb (113.8ms)
 [f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (117.3ms)
 [f30a8c0e25c4439586a0a7052a994a35] [127.0.0.1] Completed 200 OK in 124ms (Views: 120.6ms | ActiveRecord: 2.2ms)
+[4a9fc1b30a9a63321ddcfc462e701c68] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Mon Nov 05 18:53:02 +0100 2012
+[4a9fc1b30a9a63321ddcfc462e701c68] [127.0.0.1] Processing by ViewerController#forside as HTML
+[4a9fc1b30a9a63321ddcfc462e701c68] [127.0.0.1]   [1m[36mPage Load (0.4ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1[0m
+[4a9fc1b30a9a63321ddcfc462e701c68] [127.0.0.1]   [1m[35mPost Load (1.5ms)[0m  SELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10
+[4a9fc1b30a9a63321ddcfc462e701c68] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.1ms)
+[4a9fc1b30a9a63321ddcfc462e701c68] [127.0.0.1] Completed 200 OK in 21ms (Views: 11.0ms | ActiveRecord: 1.9ms)
+[5c1de749031deb69e858e1ab751add3f] [127.0.0.1] 
+
+Started GET "/assets/salon_forside_blog.css" for 127.0.0.1 at Mon Nov 05 18:53:02 +0100 2012
+[5c1de749031deb69e858e1ab751add3f] [127.0.0.1] Served asset /salon_forside_blog.css - 200 OK (0ms)
+[0df14981ab3487512bb4c4df8698dc55] [127.0.0.1] 
+
+Started GET "/assets/salon_viewer.css" for 127.0.0.1 at Mon Nov 05 18:53:02 +0100 2012
+[0df14981ab3487512bb4c4df8698dc55] [127.0.0.1] Served asset /salon_viewer.css - 200 OK (0ms)
+[2e1676dacae3606eb450858f6bd8bced] [127.0.0.1] 
+
+Started GET "/assets/salon_blog.css" for 127.0.0.1 at Mon Nov 05 18:53:02 +0100 2012
+[2e1676dacae3606eb450858f6bd8bced] [127.0.0.1] Served asset /salon_blog.css - 200 OK (0ms)
+[3cae6b1bf2ca1b2bbe1e66cc93d727bd] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Mon Nov 05 18:53:02 +0100 2012
+[3cae6b1bf2ca1b2bbe1e66cc93d727bd] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[4077a33586ca8ae3ea414865641e113b] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Mon Nov 05 18:53:02 +0100 2012
+[4077a33586ca8ae3ea414865641e113b] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[4077a33586ca8ae3ea414865641e113b] [127.0.0.1] Processing by AssetsController#show as JS
+[4077a33586ca8ae3ea414865641e113b] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[4077a33586ca8ae3ea414865641e113b] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[4077a33586ca8ae3ea414865641e113b] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[4077a33586ca8ae3ea414865641e113b] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Mon Nov 05 18:53:02 +0100 2012
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1] Processing by SessionsController#new as */*
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   [1m[36mContent Load (0.7ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position[0m
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   [1m[35mContent Load (0.7ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.9ms)
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   [1m[36mContent Load (1.6ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position[0m
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (7.5ms)
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   [1m[35mContent Load (0.6ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (101.4ms)
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position[0m
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.1ms)
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (142.8ms)
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (146.1ms)
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   Rendered layouts/_menu.html.erb (149.9ms)
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (154.7ms)
+[eb0adfc2ca465a19fa5945ca2be8bcdc] [127.0.0.1] Completed 200 OK in 171ms (Views: 166.5ms | ActiveRecord: 3.9ms)
+[5f7f69bd40bc238305004f256f1dc6d1] [127.0.0.1] 
+
+Started GET "/images/mini.gif" for 127.0.0.1 at Mon Nov 05 18:53:02 +0100 2012
+[5f7f69bd40bc238305004f256f1dc6d1] [127.0.0.1] 
+ActionController::RoutingError (No route matches [GET] "/images/mini.gif"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  activesupport (3.2.8) lib/active_support/tagged_logging.rb:25:in `tagged'
+  railties (3.2.8) lib/rails/rack/logger.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/thomas/.rvm/rubies/ruby-1.8.7-p370/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+[5f7f69bd40bc238305004f256f1dc6d1] [127.0.0.1]   Rendered /Users/thomas/.rvm/gems/ruby-1.8.7-p370/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+[ee14fe130e627d9b086fe0314d6f1612] [127.0.0.1] 
+
+Started GET "/" for 127.0.0.1 at Mon Nov 05 18:53:10 +0100 2012
+[ee14fe130e627d9b086fe0314d6f1612] [127.0.0.1] Processing by ViewerController#forside as HTML
+[ee14fe130e627d9b086fe0314d6f1612] [127.0.0.1]   [1m[35mPage Load (1.2ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`name` = 'Forside' LIMIT 1
+[ee14fe130e627d9b086fe0314d6f1612] [127.0.0.1]   [1m[36mPost Load (1.0ms)[0m  [1mSELECT `posts`.* FROM `posts` WHERE (active) ORDER BY created_at DESC LIMIT 10[0m
+[ee14fe130e627d9b086fe0314d6f1612] [127.0.0.1]   Rendered viewer/show.html.erb within layouts/viewer (0.1ms)
+[ee14fe130e627d9b086fe0314d6f1612] [127.0.0.1] Completed 200 OK in 28ms (Views: 14.1ms | ActiveRecord: 2.2ms)
+[c2af8c1df5c8ea4207c26e43888c960a] [127.0.0.1] 
+
+Started GET "/assets/defaults.js" for 127.0.0.1 at Mon Nov 05 18:53:10 +0100 2012
+[c2af8c1df5c8ea4207c26e43888c960a] [127.0.0.1] Served asset /defaults.js - 404 Not Found (3ms)
+[c2af8c1df5c8ea4207c26e43888c960a] [127.0.0.1] Processing by AssetsController#show as JS
+[c2af8c1df5c8ea4207c26e43888c960a] [127.0.0.1]   Parameters: {"id"=>"defaults"}
+[c2af8c1df5c8ea4207c26e43888c960a] [127.0.0.1] Redirected to http://localhost:3000/log_in
+[c2af8c1df5c8ea4207c26e43888c960a] [127.0.0.1] Filter chain halted as :logged_in_as_admin? rendered or redirected
+[c2af8c1df5c8ea4207c26e43888c960a] [127.0.0.1] Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+[b83eb2165b7cf56035eadb181d76e1f2] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Mon Nov 05 18:53:10 +0100 2012
+[b83eb2165b7cf56035eadb181d76e1f2] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1] 
+
+Started GET "/log_in" for 127.0.0.1 at Mon Nov 05 18:53:10 +0100 2012
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1] Processing by SessionsController#new as */*
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   [1m[35mContent Load (1.9ms)[0m  SELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position[0m
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (4.6ms)
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.2ms)
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position[0m
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.4ms)
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.4ms)
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (119.1ms)
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (122.4ms)
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   Rendered layouts/_menu.html.erb (125.2ms)
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (128.7ms)
+[c92ede1d68f3ba88c555561f33dc1d5c] [127.0.0.1] Completed 200 OK in 142ms (Views: 137.5ms | ActiveRecord: 3.7ms)
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1] 
+
+Started GET "/login" for 127.0.0.1 at Mon Nov 05 18:53:18 +0100 2012
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1] Processing by SessionsController#new as HTML
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   [1m[36mContent Load (0.9ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position[0m
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   [1m[35mContent Load (2.0ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (7.0ms)
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position[0m
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (4.3ms)
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (4.0ms)
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position[0m
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.7ms)
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (144.3ms)
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (146.9ms)
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   Rendered layouts/_menu.html.erb (149.7ms)
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (153.5ms)
+[a2dee4388c44fdd475d5886614aad5ce] [127.0.0.1] Completed 200 OK in 168ms (Views: 162.4ms | ActiveRecord: 4.3ms)
+[93929bc6d647aa1b49ff1f6dded33bb0] [127.0.0.1] 
+
+Started GET "/assets/salon_adm.css" for 127.0.0.1 at Mon Nov 05 18:53:19 +0100 2012
+[93929bc6d647aa1b49ff1f6dded33bb0] [127.0.0.1] Served asset /salon_adm.css - 200 OK (6ms)
+[15a264ae1dfae8d192b10e73b0780ccc] [127.0.0.1] 
+
+Started GET "/assets/salon_tabeller.css" for 127.0.0.1 at Mon Nov 05 18:53:19 +0100 2012
+[15a264ae1dfae8d192b10e73b0780ccc] [127.0.0.1] Served asset /salon_tabeller.css - 200 OK (5ms)
+[3ce4a9dfea16d06d765fa781ecbbe94b] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Mon Nov 05 18:53:19 +0100 2012
+[3ce4a9dfea16d06d765fa781ecbbe94b] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)
+[ca0b185f4ead3b957a0f232e1b11b341] [127.0.0.1] 
+
+Started GET "/assets/top_adm.jpg" for 127.0.0.1 at Mon Nov 05 18:53:19 +0100 2012
+[ca0b185f4ead3b957a0f232e1b11b341] [127.0.0.1] Served asset /top_adm.jpg - 200 OK (3ms)
+[cf2d269f6c3558bef98c9181c9911459] [127.0.0.1] 
+
+Started GET "/assets/menu_baggrund.gif" for 127.0.0.1 at Mon Nov 05 18:53:19 +0100 2012
+[cf2d269f6c3558bef98c9181c9911459] [127.0.0.1] Served asset /menu_baggrund.gif - 200 OK (2ms)
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1] 
+
+Started POST "/sessions" for 127.0.0.1 at Mon Nov 05 18:53:23 +0100 2012
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1] Processing by SessionsController#create as HTML
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   Parameters: {"password"=>"[FILTERED]", "authenticity_token"=>"1hHZ+I9zzAi7+hUy9npJ7b4N/CGcMD85sv19xJvd2R0=", "email"=>"ts@", "utf8"=>"✓", "commit"=>"[Log ind]"}
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   [1m[35mUser Load (2.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'ts@' LIMIT 1
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position[0m
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.3ms)
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position[0m
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (83.5ms)
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.2ms)
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position[0m
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (110.9ms)
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (114.6ms)
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   Rendered layouts/_menu.html.erb (117.4ms)
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1]   Rendered sessions/new.html.erb within layouts/application (121.0ms)
+[6ae243457eadd6bdb390b7126e0251e6] [127.0.0.1] Completed 200 OK in 147ms (Views: 123.9ms | ActiveRecord: 9.4ms)
+[4eca87defe0ef2f3386e449d881a31fd] [127.0.0.1] 
+
+Started POST "/sessions" for 127.0.0.1 at Mon Nov 05 18:53:33 +0100 2012
+[4eca87defe0ef2f3386e449d881a31fd] [127.0.0.1] Processing by SessionsController#create as HTML
+[4eca87defe0ef2f3386e449d881a31fd] [127.0.0.1]   Parameters: {"password"=>"[FILTERED]", "authenticity_token"=>"1hHZ+I9zzAi7+hUy9npJ7b4N/CGcMD85sv19xJvd2R0=", "email"=>"ts@kruby.dk", "utf8"=>"✓", "commit"=>"[Log ind]"}
+[4eca87defe0ef2f3386e449d881a31fd] [127.0.0.1]   [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'ts@kruby.dk' LIMIT 1
+[4eca87defe0ef2f3386e449d881a31fd] [127.0.0.1]   [1m[36mRelation Load (0.4ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`user_id` = 1 LIMIT 1[0m
+[4eca87defe0ef2f3386e449d881a31fd] [127.0.0.1] Redirected to http://localhost:3000/hours
+[4eca87defe0ef2f3386e449d881a31fd] [127.0.0.1] Completed 302 Found in 125ms (ActiveRecord: 6.8ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1] 
+
+Started GET "/hours" for 127.0.0.1 at Mon Nov 05 18:53:34 +0100 2012
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1] Processing by HoursController#index as HTML
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mUser Load (13.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 1]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mContent Load (0.6ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'admin') ORDER BY position[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'editor') ORDER BY position
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'user') ORDER BY position[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 1]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mHour Load (2.8ms)[0m  [1mSELECT `hours`.* FROM `hours` ORDER BY relation_id DESC, date DESC[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE (parent_id IS NULL and active and category = 'public' ) ORDER BY position
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 1 ORDER BY position[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.1ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 11 ORDER BY position
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.8ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 5 ORDER BY position[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.4ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 6 ORDER BY position
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_main_level_2.html.erb (3.0ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_main_level_1.html.erb (125.7ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mContent Load (0.5ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 2 ORDER BY position[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (4.6ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 3 ORDER BY position
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (3.5ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 4 ORDER BY position[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (3.6ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mContent Load (0.5ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 7 ORDER BY position
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (95.4ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 8 ORDER BY position[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (3.6ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 9 ORDER BY position
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (3.0ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mContent Load (0.6ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 12 ORDER BY position[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (3.4ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 13 ORDER BY position
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (3.0ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mContent Load (0.4ms)[0m  [1mSELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 14 ORDER BY position[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (3.0ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mContent Load (0.4ms)[0m  SELECT `contents`.* FROM `contents` WHERE `contents`.`parent_id` = 15 ORDER BY position
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_2.html.erb (122.9ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_1.html.erb (290.2ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered menusystem/_menu_level_0.html.erb (424.5ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered layouts/_menu.html.erb (427.5ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.5ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE (date BETWEEN '2011-01-01T00:00:00+01:00' AND '2011-06-30T00:00:00+01:00')[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.3ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE (date BETWEEN '2011-07-01T00:00:00+01:00' AND '2011-12-31T23:59:59+01:00')
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE (date BETWEEN '2012-01-01T00:00:00+00:00' AND '2012-06-30T00:00:00+00:00')[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE (date BETWEEN '2012-07-01T00:00:00+00:00' AND '2012-12-31T23:59:59+00:00')
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.6ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE (date BETWEEN '2011-01-01T00:00:00+01:00' AND '2011-06-30T00:00:00+01:00')[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.5ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE (date BETWEEN '2011-07-01T00:00:00+01:00' AND '2011-12-31T23:59:59+01:00')
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.4ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE (date BETWEEN '2012-01-01T00:00:00+00:00' AND '2012-06-30T00:00:00+00:00')[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE (date BETWEEN '2012-07-01T00:00:00+00:00' AND '2012-12-31T23:59:59+00:00')
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mRelation Load (0.5ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 12]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 12
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.5ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 12[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 12
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 12[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mRelation Load (0.3ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 11]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 11[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.3ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 11
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 11[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 11
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 11]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 11]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mRelation Load (0.3ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 10]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.3ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 10
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.4ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 10[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 10
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 10[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 10]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 10]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 10]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 10]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 10]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 10]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 10]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mRelation Load (0.3ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 9]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 9
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 9[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 9
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 9[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 9]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 9]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mRelation Load (0.4ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 8[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.3ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 8
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 8[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 8
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 8]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mRelation Load (0.4ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 7]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.3ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 7
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.7ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 7[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 7
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 7[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 7]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 7]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 7]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 7]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mRelation Load (0.4ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 6[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 6
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 6[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 6
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 6]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mRelation Load (0.4ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 5[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.4ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 5
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 5[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 5
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 5]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mRelation Load (0.4ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.2ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 4
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 4[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 4
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 4[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 4]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mRelation Load (0.4ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36m (0.3ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 3[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35m (0.3ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 3
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT SUM(`vouchers`.`number`) AS sum_id FROM `vouchers` WHERE `vouchers`.`relation_id` = 3[0m
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT SUM(`hours`.`number`) AS sum_id FROM `hours` WHERE `hours`.`relation_id` = 3
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[36mCACHE (0.0ms)[0m  [1mSELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1[0m  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   [1m[35mCACHE (0.0ms)[0m  SELECT `relations`.* FROM `relations` WHERE `relations`.`id` = ? LIMIT 1  [["id", 3]]
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1]   Rendered hours/index.html.erb within layouts/application (1254.8ms)
+[ff648b3f5b71a87c3a0b8129ccd331c7] [127.0.0.1] Completed 200 OK in 1447ms (Views: 1235.5ms | ActiveRecord: 48.6ms)
+[0beeb521083e4dd252edfa577f4c5030] [127.0.0.1] 
+
+Started GET "/assets/application.js" for 127.0.0.1 at Mon Nov 05 18:53:35 +0100 2012
+[0beeb521083e4dd252edfa577f4c5030] [127.0.0.1] Served asset /application.js - 304 Not Modified (0ms)

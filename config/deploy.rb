@@ -23,7 +23,7 @@ set(:deploy_to) { File.join("", "home", user, application) }
 # URL of your source repository. This is the default one that comes on 
 # every Brightbox, you can use your own (we'll let you :)
 
-set :repository, "git@github.com:salon_blog/salondirect.git"
+set :repository, "git@github.com:kruby/salondirect.git"
 set :scm, :git
 set :deploy_via, :copy
 set :branch, "master"
