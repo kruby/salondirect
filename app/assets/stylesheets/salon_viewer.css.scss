@@ -6,20 +6,90 @@ div#salon_italy {
     height: 100%;
     margin: auto;
     position: absolute;
-    top: 48%;
+    top: 15%;
     width: 100%;
 }
 
 
 div#salon_italy a{
 	text-decoration: none;
-	color:#FF0000;
+	color:#930006;
 	font-size: 20px;
 	font-weight: bold;
+	margin: 0px;
 }
 
+div#salon_italy p.kontakt{
+	text-decoration: none;
+	color:#930006;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+}
+
+div#salon_italy p.link_til{
+	text-decoration: none;
+	color:#930006;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px 0px 0px 0px;
+}
+
+div#salon_italy p.landsdel{
+	text-decoration: none;
+	color:#930006;
+	font-size: 10px;
+	line-height: 12px;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px 0px 5px 0px;
+}
+
+div#salon_italy p.adresse{
+	text-decoration: none;
+	color:#E9E9E9;
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 6px;
+}
+
+div#salon_italy a.mail_to{
+	text-decoration: none;
+	color:#E9E9E9;
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 6px;
+}
+
+div#salon_italy p.opbygning{
+	text-decoration: none;
+	color:#E9E9E9;
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 6px;
+}
+
+div#salon_italy a.link{
+	text-decoration: none;
+	color:#E9E9E9;
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0px;
+}
+
+
 br {
-	margin-bottom: 7px;
+	margin-bottom: 0px;
 }
 body {
 	margin-top: 0px;
