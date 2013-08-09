@@ -33,7 +33,7 @@ class ViewerController < ApplicationController
     #       render :action => "show"
     #     end
     
-    render :action => "show"
+    render :action => "new_show"
 
   end
 

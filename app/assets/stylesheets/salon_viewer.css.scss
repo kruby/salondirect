@@ -4,6 +4,7 @@ html, body, #bg, #bg table, #bg td {
     overflow:hidden;
 }
 
+
 #bg {
     position: fixed;
 	margin-top: 0px;
@@ -33,14 +34,109 @@ html, body, #bg, #bg table, #bg td {
 	font-family:Verdana, Arial, Helvetica, sans-serif;
 }
 
-div#salon_italy {
-    height: 100%;
-    margin: auto;
-    position: absolute;
-    top: 10%;
-    width: 100%;
+div#outside_wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
+div#salon_italy {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 5%;
+    overflow: hidden;
+}
+
+div#salon_italy div#logo {
+  width: 100%;
+  position: relative;
+}
+
+div#salon_italy div#logo p {
+  color:#800000;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+
+div#salon_italy div#suppliers {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+div#salon_italy div#suppliers p {
+  color:#FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+div#bottom {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  min-width: 700px;
+  padding: 0% 5% 0% 5%;
+  overflow: hidden;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+
+div#bottom div#bottom_menu {
+  width: 100%;
+  height: 30px;
+  border-bottom: 8px solid #800000;
+  position: relative;
+  text-align: left;
+  padding-top: 8px;
+  padding-left: 2px;
+}
+
+div#bottom div#bottom_menu span {
+  flaot: left;
+  color: #FFFFFF;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+div#bottom div#bottom_info {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 8px;
+  float: left;
+  color: #FFFFFF;
+  border-bottom: 2px solid #800000;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+div#bottom div#bottom_info table.left {
+  text-align: left;
+  float: left;
+  padding-left: 2px;
+}
+
+div#bottom_info table.left td {
+  padding-right: 10px;
+}
+
+div#bottom_info table.right {
+  text-align: right;
+  float: right;
+  margin-right: 2px;
+}
+
+div#bottom_info table.right td.company {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+}
 
 div#salon_italy a{
 	text-decoration: none;
@@ -88,7 +184,7 @@ div#salon_italy p.adresse{
 	margin-top: 6px;
 }
 
-div#salon_italy a.mail_to{
+div#bottom a.mail_to{
 	text-decoration: none;
 	color:#E9E9E9;
 	font-size: 11px;
