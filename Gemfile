@@ -1,17 +1,13 @@
 source 'http://rubygems.org'
 
 ruby '1.8.7'
-#ruby '2.0.0'
-
 
 gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 #gem 'mysql2', '~> 0.2.6'
-#gem 'mysql', "~> 2.8.1"
-gem "mysql2"
-# gem "activerecord-mysql2-adapter"
+gem 'mysql'
 gem "RedCloth"
 gem "will_paginate", "~> 3.0.pre4"
 gem "newrelic_rpm"
@@ -22,10 +18,7 @@ gem "i18n"
 gem "ransack"
 #gem "meta_search"
 gem "acts_as_tree", "~> 0.2.0"
-gem "brightbox", "~> 2.4.0.pre1"
-gem 'rqrcode-rails3'
-gem 'mini_magick'
-gem 'rake', '~> 0.9.2.2'
+gem "brightbox"
 
 group :assets do
   gem 'sass-rails', "~> 3.2.3"
@@ -41,11 +34,6 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 gem 'capistrano'
-
-gem 'haml'
-gem 'coffee-filter'                                     # handle coffeescript inside HAML - using :coffeescript
-gem "rdiscount"                                         # MarkDown HTML formatter
-
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
